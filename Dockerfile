@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-COPY target/web.jar
+COPY docker-groovy/build/libs/docker-groovy-0.0.1-SNAPSHOT.jar /
 
 RUN apt-get update -y && apt-get install default-jdk -y -f
 
